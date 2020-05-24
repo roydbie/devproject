@@ -1,7 +1,7 @@
 /* colours */
 :root{
-  --primary: #00985F;
-  --secondary: #00985F;
+  --primary: #00a170;
+  --secondary: #00a170;
   --title: #ffffff;
   --add: #464646;
 }
@@ -52,7 +52,7 @@ nav .sidenav-trigger{
   grid-area: delete;
   position: absolute;
   top: 24px;
-  right: 24px; 
+  right: 24px;
   font-size: 12px;
 }
 .user-delete span {
