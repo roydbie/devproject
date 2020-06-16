@@ -63,20 +63,19 @@
             <p id="text1" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link1" href="#" style="color:#00a170;">Bekijk dit artikel.</a>
+            <a id="link1" href="#" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-    <div class="mypanel"></div>
-
     <script>
     $.getJSON('https://www.reddit.com/r/soccer/hot/.json', function(data) {
+
+      $.each(data.justIn, function() {
+          $.each(this, function(k, v) {
+              alert(k + ' ' + v);
+          });
+      });
 
         var title1 = data.data.children[2].data.title;
         if(title1.length > 150) title1 = title1.substring(0,150) + "...";
