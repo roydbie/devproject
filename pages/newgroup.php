@@ -23,7 +23,7 @@
   <!-- top nav -->
   <nav class="z-depth-0">
     <div class="nav-wrapper container">
-      <a href="/">DEV project <span>INSTELLINGEN</span></a>
+      <a href="/">DEV project <span>GROEP TOEVOEGEN</span></a>
       <span class="right grey-text text-darken-1">
         <i class="material-icons sidenav-trigger" data-target="side-menu" style="color: white;">menu</i>
       </span>
@@ -33,19 +33,19 @@
   <!-- side nav -->
   <ul id="side-menu" class="sidenav side-menu">
     <li><a class="subheader">DEV PROJECT</a></li>
-    <li><a href="../index.html" class="waves-effect">
+    <li><a href="../index.php" class="waves-effect">
       <i class="material-icons">home</i>Home</a>
     </li>
-    <li><a href="/pages/groep1.html" class="waves-effect">
+    <li><a href="/pages/groep1.php" class="waves-effect">
       <i class="material-icons">group</i>Badgasten</a>
     </li>
-    <li><a href="groep2.html" class="waves-effect">
+    <li><a href="groep2.php" class="waves-effect">
       <i class="material-icons">group</i>The fam</a>
     </li>
-    <li><a href="newgroup.html" class="waves-effect">
+    <li><a href="newgroup.php" class="waves-effect">
       <i class="material-icons">add</i> Groep toevoegen</a>
     </li>
-    <li><a href="instellingen.html" class="waves-effect">
+    <li><a href="instellingen.php" class="waves-effect">
       <i class="material-icons">settings</i>Instellingen</a>
     </li>
   </ul>
@@ -53,7 +53,7 @@
   <br>
 
   <div style="margin:10%;width:80%;">
-    <p class="center-align">Hier komt een overzicht van de instellingen.</p>
+    <p class="center-align">Hier komt een optie om een group aan te maken.</p>
   </div>
 
   <script src="/js/app.js"></script>

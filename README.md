@@ -12,7 +12,6 @@ Estimated end-date: 26 June 2020.
 All components are installed in the project itself so it is not needed to install anything.
 
 The project makes use of materialize which is included already.
-Alle componenten zijn geinstalleerd in het project zelf en het is niet van toepassing deze opnieuw te installeren.
 
 ## Author
 
