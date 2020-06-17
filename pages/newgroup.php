@@ -1,10 +1,9 @@
 <?php
 require('../database.php');
 
-$username = "";
-$mainuserid = 0;
+$username = $_GET["username"];
 
-$sql = "SELECT id, username FROM users WHERE id=1";
+$sql = "SELECT id, username FROM users WHERE username= '$username'";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -134,17 +133,73 @@ if (mysqli_num_rows($result1) > 0) {
   <br>
 
   <div style="margin:10%;width:80%;">
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="last_name" type="text" class="validate">
-        <label for="last_name">New group name:</label>
+    <form method="post">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="last_name" name="newgroupname" type="text" class="validate"/>
+          <label for="last_name">New group name:</label>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <a class="btn" style="background-color:#00a170;margin-left:40%;">Add new group</a>
-    </div>
+      <div class="row">
+        <input class="btn" name="submit" style="background-color:#00a170;margin-left:40%;" type="submit" value="Add group">
+      </div>
+    </form>
 
   </div>
+  <?php
+
+  if ( isset( $_POST['submit'] ) ) {
+    $newgroupname = $_POST['newgroupname'];
+
+    $sql2 = "SELECT groupname1, groupname2, groupname3, groupname4 FROM users WHERE id= ". $mainuserid ."";
+    $result2 = mysqli_query($conn, $sql2);
+
+    if (mysqli_num_rows($result2) > 0) {
+      // output data of each row
+      while($row = mysqli_fetch_assoc($result2)) {
+        if (is_null($row["groupname1"]) == true) {
+          $sql = "UPDATE users SET groupname1='$newgroupname' WHERE id= ". $mainuserid ."";
+
+          if (mysqli_query($conn, $sql)) {
+            header( "Location: ../index.php" );
+          } else {
+            echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
+          }
+        } else if (is_null($row["groupname2"]) == true) {
+          $sql = "UPDATE users SET groupname2='$newgroupname' WHERE id= ". $mainuserid ."";
+
+          if (mysqli_query($conn, $sql)) {
+            header( "Location: ../index.php" );
+          } else {
+            echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
+          }
+        } else if (is_null($row["groupname3"]) == true) {
+          $sql = "UPDATE users SET groupname3='$newgroupname' WHERE id= ". $mainuserid ."";
+
+          if (mysqli_query($conn, $sql)) {
+            header( "Location: ../index.php" );
+          } else {
+            echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
+          }
+        } else if (is_null($row["groupname4"]) == true) {
+          $sql = "UPDATE users SET groupname4='$newgroupname' WHERE id= ". $mainuserid ."";
+
+          if (mysqli_query($conn, $sql)) {
+            header( "Location: ../index.php" );
+          } else {
+            echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
+          }
+        } else {}
+      }
+    } else {
+      echo "<script>console.log('Ze zijn allemaal vol.' );</script>";
+    }
+
+
+
+  }
+
+  ?>
 
   <script src="../js/app.js"></script>
   <script src="../js/ui.js"></script>

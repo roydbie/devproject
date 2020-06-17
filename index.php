@@ -1,10 +1,9 @@
 <?php
 require('database.php');
 
-$username = "";
-$mainuserid = 0;
+$username = $_GET["username"];
 
-$sql = "SELECT id, username FROM users WHERE id=1";
+$sql = "SELECT id, username FROM users WHERE username= '$username'";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
