@@ -2,32 +2,30 @@
 
 ## Status
 ```diff
-- Bezig
+- Currently working on
 ```
 
-Geschatte einddatum: 26 juni 2020.
+Estimated end-date: 26 June 2020.
 
 ## Development setup
 
+All components are installed in the project itself so it is not needed to install anything.
+
+The project makes use of materialize which is included already.
 Alle componenten zijn geinstalleerd in het project zelf en het is niet van toepassing deze opnieuw te installeren.
 
-Het project gebruikt react bootstrap, deze kan geinstalleerd worden in de overkoepelende map door gebruik te maken van de volgende npm code.
+## Author
 
-```sh
-npm install --save react-bootstrap@1.0.0-beta.6 bootstrap@4.3.1
-```
-
-## Auteur
 * Roy de Bie
 
 Student Fontys FHICT
 
 
 
-## Clone deze repo naar uw eigen systeem
+## Clone this repo to your local machine
 https://github.com/roydbie/devproject
 
-## Gebruikte Programma's
+## Used programs
 * Atom
 * MAMP
 * GitKraken
