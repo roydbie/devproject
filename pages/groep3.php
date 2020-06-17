@@ -43,7 +43,7 @@
       <i class="material-icons">group</i>The fam</a>
     </li>
     <li><a href="newgroup.php" class="waves-effect">
-      <i class="material-icons">add</i>Add a group</a>
+      <i class="material-icons">add</i> Add a group</a>
     </li>
     <li><a href="instellingen.php" class="waves-effect">
       <i class="material-icons">settings</i>Settings</a>

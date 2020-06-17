@@ -90,45 +90,45 @@ if (mysqli_num_rows($result1) > 0) {
   <!-- side nav -->
   <ul id="side-menu" class="sidenav side-menu">
     <li><a class="subheader"><?php echo $username ?></a></li>
-    <li><a href="index.html" class="waves-effect">
+    <li><a href="index.php" class="waves-effect">
       <i class="material-icons">home</i>Home</a>
     </li>
     <?php
     if ($group1name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep1.html?groupname=' . $group1name . '" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="/pages/groep1.php?groupname=' . $group1name . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group1name;
       echo '</a></li>';
     }
     if ($group2name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep2.html" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="/pages/groep2.php" class="waves-effect"><i class="material-icons">group</i>';
       echo $group2name;
       echo '</a></li>';
     }
     if ($group3name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep3.html" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="/pages/groep3.php" class="waves-effect"><i class="material-icons">group</i>';
       echo $group3name;
       echo '</a></li>';
     }
     if ($group4name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep4.html" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="/pages/groep4.php" class="waves-effect"><i class="material-icons">group</i>';
       echo $group4name;
       echo '</a></li>';
     }
 
     ?>
-    <li><a href="/pages/newgroup.html" class="waves-effect">
-      <i class="material-icons">add</i>Groep toevoegen</a>
+    <li><a href="/pages/newgroup.php?username=<?php echo $username; ?>" class="waves-effect">
+      <i class="material-icons">add</i>Add a group</a>
     </li>
-    <li><a href="/pages/instellingen.html" class="waves-effect">
-      <i class="material-icons">settings</i>Instellingen</a>
+    <li><a href="/pages/instellingen.php" class="waves-effect">
+      <i class="material-icons">settings</i>Settings</a>
     </li>
   </ul>
 
