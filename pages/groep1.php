@@ -140,13 +140,13 @@ if (mysqli_num_rows($result1) > 0) {
   <?php
 
   if ($group === "groupname1") {
-    $grouppoints = "group1points";
+    $grouppoints = "groupname1points";
   } else if ($group === "groupname2") {
-      $grouppoints = "group2points";
+      $grouppoints = "groupname2points";
   } else if ($group === "groupname3") {
-      $grouppoints = "group3points";
+      $grouppoints = "groupname3points";
   } else if ($group === "groupname4") {
-      $grouppoints = "group4points";
+      $grouppoints = "groupname4points";
   } else {
     // code...
   }
@@ -159,11 +159,11 @@ if (mysqli_num_rows($result1) > 0) {
       echo "<script>console.log('" . $row["username"] . "' );</script>";
       echo "<script>console.log('" . $row["'$grouppoints'"] . "' );</script>";
       echo '<div class="card-panel user white row">
-                <img src="/img/numb1.png" alt="not found">
+                <img src="/img/blank.png" alt="not found">
                 <div class="user-details">
                   <div class="user-title">';
       echo $row["username"];
-      echo '</div><div class="user-info">Amount op points:  &nbsp;&nbsp;	 <b>';
+      echo '</div><div class="user-info">Amount of points:  &nbsp;&nbsp;	 <b>';
       echo $row[0];
       echo '</b></div>
           </div>
@@ -184,36 +184,6 @@ if (mysqli_num_rows($result1) > 0) {
 
   ?>
 
-    <div class="card-panel user white row">
-      <img src="/img/numb2.png" alt="not found">
-      <div class="user-details">
-        <div class="user-title">Thomas van de Pas</div>
-        <div class="user-info">Aantal punten:  &nbsp;&nbsp;	 <b>7</b></div>
-      </div>
-      <div class="recipe-delete" style="margin-top:15px;">
-        <a href="" style="color: #464646;"><i class="material-icons" style="font-size: 35px;">chevron_right</i></a>
-      </div>
-    </div>
-    <div class="card-panel user white row">
-      <img src="/img/numb3.png" alt="not found">
-      <div class="user-details">
-        <div class="user-title">Sem Ambachtsheer</div>
-        <div class="user-info">Aantal punten:  &nbsp;&nbsp;	 <b>5</b></div>
-      </div>
-      <div class="recipe-delete" style="margin-top:15px;">
-        <a href="" style="color: #464646;"><i class="material-icons" style="font-size: 35px;">chevron_right</i></a>
-      </div>
-    </div>
-    <div class="card-panel user white row">
-      <img src="/img/blank.png" alt="not found">
-      <div class="user-details">
-        <div class="user-title">Roy de Bie</div>
-        <div class="user-info">Aantal punten:  &nbsp;&nbsp;	 <b>3</b></div>
-      </div>
-      <div class="recipe-delete" style="margin-top:15px;">
-        <a href="" style="color: #464646;"><i class="material-icons" style="font-size: 35px;">chevron_right</i></a>
-      </div>
-    </div>
   </div>
 
   <script src="/js/app.js"></script>
