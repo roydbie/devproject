@@ -161,7 +161,7 @@ if (mysqli_num_rows($result1) > 0) {
           $sql = "UPDATE users SET groupname1='$newgroupname' WHERE id= ". $mainuserid ."";
 
           if (mysqli_query($conn, $sql)) {
-            header( "Location: ../index.php" );
+            header( "Location: ../index.php?username= " . $username . "" );
           } else {
             echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
           }
@@ -169,7 +169,7 @@ if (mysqli_num_rows($result1) > 0) {
           $sql = "UPDATE users SET groupname2='$newgroupname' WHERE id= ". $mainuserid ."";
 
           if (mysqli_query($conn, $sql)) {
-            header( "Location: ../index.php" );
+            header( "Location: ../index.php?username=" . $username . "" );
           } else {
             echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
           }
@@ -177,7 +177,7 @@ if (mysqli_num_rows($result1) > 0) {
           $sql = "UPDATE users SET groupname3='$newgroupname' WHERE id= ". $mainuserid ."";
 
           if (mysqli_query($conn, $sql)) {
-            header( "Location: ../index.php" );
+            header( "Location: ../index.php?username=" . $username . "" );
           } else {
             echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
           }
@@ -185,7 +185,7 @@ if (mysqli_num_rows($result1) > 0) {
           $sql = "UPDATE users SET groupname4='$newgroupname' WHERE id= ". $mainuserid ."";
 
           if (mysqli_query($conn, $sql)) {
-            header( "Location: ../index.php" );
+            header( "Location: ../index.php?username=" . $username . "" );
           } else {
             echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
           }
