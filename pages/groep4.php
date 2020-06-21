@@ -126,7 +126,7 @@ if (mysqli_num_rows($result1) > 0) {
     }
 
     ?>
-    <li><a href="/pages/instellingen.php" class="waves-effect">
+    <li><a href="/pages/instellingen.php?username=<?php echo $username ?>" class="waves-effect">
       <i class="material-icons">settings</i>Settings</a>
     </li>
   </ul>
@@ -150,7 +150,7 @@ if (mysqli_num_rows($result1) > 0) {
   } else {
     // code...
   }
-  $sql = "SELECT username,'$grouppoints' FROM users WHERE groupname1= '$group' OR groupname2= '$group' OR groupname3= '$group' OR groupname4= '$group'";
+  $sql = "SELECT username,groupname4points FROM users WHERE groupname1= '$group' OR groupname2= '$group' OR groupname3= '$group' OR groupname4= '$group'";
   $result = mysqli_query($conn, $sql);
 
   if (mysqli_num_rows($result) > 0) {
@@ -164,7 +164,7 @@ if (mysqli_num_rows($result1) > 0) {
                   <div class="user-title">';
       echo $row["username"];
       echo '</div><div class="user-info">Amount of points:  &nbsp;&nbsp;	 <b>';
-      echo $row[0];
+      echo $row["groupname4points"];
       echo '</b></div>
           </div>
           <div class="recipe-delete" style="margin-top:15px;">
@@ -181,6 +181,37 @@ if (mysqli_num_rows($result1) > 0) {
 
 
 
+
+  ?>
+
+  <div class="row">
+    <form class="col s12" method="post" >
+      <div class="input-field col s12">
+          <input type="submit" value="Delete group" name="submit" class="btn" style="background-color: red;width:25%;margin-left:37.5%;">
+      </div>
+    </form>
+  </div>
+
+  <?php
+
+  $group = $_GET["groupname"];
+
+  if ( isset( $_POST['submit'] ) ) {
+
+    $sql1 = "UPDATE users SET groupname1 = NULL WHERE groupname1 = '$group'";
+    $sql2= "UPDATE users SET groupname2 = NULL WHERE groupname2 = '$group'";
+    $sql3 = "UPDATE users SET groupname3 = NULL WHERE groupname3 = '$group'";
+    $sql4 = "UPDATE users SET groupname4 = NULL WHERE groupname4 = '$group'";
+    mysqli_query($conn, $sql1);
+    mysqli_query($conn, $sql2);
+    mysqli_query($conn, $sql3);
+    mysqli_query($conn, $sql4);
+    header( "Location: ../index.php?username=". $username . "" );
+
+
+
+
+  }
 
   ?>
 

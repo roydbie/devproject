@@ -125,7 +125,7 @@ if (mysqli_num_rows($result1) > 0) {
     <li><a href="/pages/newgroup.php?username=<?php echo $username; ?>" class="waves-effect">
       <i class="material-icons">add</i>Add a group</a>
     </li>
-    <li><a href="/pages/instellingen.php" class="waves-effect">
+    <li><a href="/pages/instellingen.php?username=<?php echo $username ?>" class="waves-effect">
       <i class="material-icons">settings</i>Settings</a>
     </li>
   </ul>
@@ -141,7 +141,7 @@ if (mysqli_num_rows($result1) > 0) {
         </div>
       </div>
       <div class="row">
-        <input class="btn" name="submit" style="background-color:#00a170;margin-left:40%;" type="submit" value="Add group">
+        <input class="btn" name="submit" style="background-color:#00a170;width:100%;" type="submit" value="Add group">
       </div>
     </form>
 
@@ -161,7 +161,7 @@ if (mysqli_num_rows($result1) > 0) {
           $sql = "UPDATE users SET groupname1='$newgroupname' WHERE id= ". $mainuserid ."";
 
           if (mysqli_query($conn, $sql)) {
-            header( "Location: ../index.php?username= " . $username . "" );
+            header( "Location: ../index.php?username=" . $username . "" );
           } else {
             echo "<script>console.log('Niet toe kunnen voegen.' );</script>";
           }

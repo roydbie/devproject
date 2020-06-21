@@ -129,6 +129,9 @@ if (mysqli_num_rows($result1) > 0) {
     <li><a href="/pages/instellingen.php" class="waves-effect">
       <i class="material-icons">settings</i>Settings</a>
     </li>
+    <li><a href="/pages/login.php" class="waves-effect">
+      <i class="material-icons">exit_to_app</i>Log out</a>
+    </li>
   </ul>
 
 
