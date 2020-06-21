@@ -103,14 +103,14 @@ if (mysqli_num_rows($result1) > 0) {
     if ($group2name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep2.php" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="/pages/groep2.php?groupname=' . $group2name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group2name;
       echo '</a></li>';
     }
     if ($group3name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep3.php" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="/pages/groep3.php?groupname=' . $group3name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group3name;
       echo '</a></li>';
     }
@@ -119,7 +119,7 @@ if (mysqli_num_rows($result1) > 0) {
         <i class="material-icons">add</i>Add a group</a>
       </li>';
     } else {
-      echo '<li><a href="/pages/groep4.php" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="/pages/groep4.php?groupname=' . $group4name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group4name;
       echo '</a></li>';
     }

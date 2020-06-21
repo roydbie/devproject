@@ -97,21 +97,21 @@ if (mysqli_num_rows($result1) > 0) {
     if ($group1name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep1.php?groupname=' . $group1name . '" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="groep1.php?groupname=' . $group1name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group1name;
       echo '</a></li>';
     }
     if ($group2name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep2.php" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="groep2.php?groupname=' . $group2name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group2name;
       echo '</a></li>';
     }
     if ($group3name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep3.php" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="groep3.php?groupname=' . $group3name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group3name;
       echo '</a></li>';
     }
@@ -120,7 +120,7 @@ if (mysqli_num_rows($result1) > 0) {
         <i class="material-icons">add</i>Add a group</a>
       </li>';
     } else {
-      echo '<li><a href="/pages/groep4.php" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="groep4.php?groupname=' . $group4name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group4name;
       echo '</a></li>';
     }
@@ -157,7 +157,7 @@ if (mysqli_num_rows($result1) > 0) {
     echo '<div class="users container grey-text text-darken-1">';
     while($row = mysqli_fetch_assoc($result)) {
       echo "<script>console.log('" . $row["username"] . "' );</script>";
-      echo "<script>console.log('" . $row["'$grouppoints'"] . "' );</script>";
+      echo "<script>console.log('" . $row["$grouppoints"] . "' );</script>";
       echo '<div class="card-panel user white row">
                 <img src="/img/blank.png" alt="not found">
                 <div class="user-details">
