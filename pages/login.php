@@ -48,7 +48,7 @@ require('../database.php');
       </div>
 
       <div class="input-field col s12">
-          <input type="submit" value="Submit" name="submit" class="btn" style="background-color: #00a170;width:100%;"> 
+          <input type="submit" value="Submit" name="submit" class="btn" style="background-color: #00a170;width:100%;">
       </div>
     </form>
   </div>

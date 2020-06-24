@@ -62,15 +62,15 @@ if (mysqli_num_rows($result1) > 0) {
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
   <!-- materialize icons, css & js -->
-  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" href="/css/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="/js/materialize.min.js"></script>
-  <link rel="manifest" href="/manifest.json">
+  <link type="text/css" href="css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <link rel="manifest" href="manifest.json">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   <!-- ios support-->
-  <link rel="apple-touch-icon" href="/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" href="icons/icon-96x96.png">
   <meta name="apple-mobile-web-app-status-bar" content="#00985F">
 
 </head>
@@ -96,40 +96,40 @@ if (mysqli_num_rows($result1) > 0) {
     if ($group1name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep1.php?groupname=' . $group1name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="pages/groep1.php?groupname=' . $group1name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group1name;
       echo '</a></li>';
     }
     if ($group2name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep2.php?groupname=' . $group2name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="pages/groep2.php?groupname=' . $group2name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group2name;
       echo '</a></li>';
     }
     if ($group3name === "notfound") {
       // code...
     } else {
-      echo '<li><a href="/pages/groep3.php?groupname=' . $group3name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="pages/groep3.php?groupname=' . $group3name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group3name;
       echo '</a></li>';
     }
     if ($group4name === "notfound") {
-      echo '<li><a href="/pages/newgroup.php?username=' . $username . '" class="waves-effect">
+      echo '<li><a href="pages/newgroup.php?username=' . $username . '" class="waves-effect">
         <i class="material-icons">add</i>Add a group</a>
       </li>';
     } else {
-      echo '<li><a href="/pages/groep4.php?groupname=' . $group4name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
+      echo '<li><a href="pages/groep4.php?groupname=' . $group4name . '&username=' . $username . '" class="waves-effect"><i class="material-icons">group</i>';
       echo $group4name;
       echo '</a></li>';
     }
 
     ?>
 
-    <li><a href="/pages/instellingen.php?username=<?php echo $username ?>" class="waves-effect">
+    <li><a href="pages/instellingen.php?username=<?php echo $username ?>" class="waves-effect">
       <i class="material-icons">settings</i>Settings</a>
     </li>
-    <li><a href="/pages/login.php" class="waves-effect">
+    <li><a href="pages/login.php" class="waves-effect">
       <i class="material-icons">exit_to_app</i>Log out</a>
     </li>
   </ul>
@@ -145,7 +145,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text1" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link1" href="" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link1" href="" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text2" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link2" href="#" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link2" href="#" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -175,7 +175,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text3" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link3" href="#" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link3" href="#" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text4" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link4" href="#" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link4" href="#" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -205,7 +205,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text5" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link5" href="#" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link5" href="#" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -220,7 +220,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text6" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link6" href="#" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link6" href="#" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -235,7 +235,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text7" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link7" href="#" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link7" href="#" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -250,7 +250,7 @@ if (mysqli_num_rows($result1) > 0) {
             <p id="text8" style="font-size: 13px;font-weight:500;">Tijd geleden</p>
           </div>
           <div class="card-action" style="max-width: 80vw;">
-            <a id="link8" href="" style="color:#00a170;"><b>Bekijk dit artikel.</b></a>
+            <a id="link8" href="" style="color:#00a170;"><b>Look at this article.</b></a>
           </div>
         </div>
       </div>
@@ -262,7 +262,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author1 = "Auteur: " + data.data.children[0].data.author;
         var link1 = data.data.children[0].data.url;
         var text1 = data.data.children[0].data.selftext;
-        if(text1.length > 200) text1 = text1.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text1.length > 200) text1 = text1.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title1").html(title1);
@@ -275,7 +275,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author2 = "Auteur: " + data.data.children[1].data.author;
         var link2 = data.data.children[1].data.url;
         var text2 = data.data.children[1].data.selftext;
-        if(text2.length > 200) text2 = text2.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text2.length > 200) text2 = text2.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title2").html(title2);
@@ -288,7 +288,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author3 = "Auteur: " + data.data.children[2].data.author;
         var link3 = data.data.children[2].data.url;
         var text3 = data.data.children[2].data.selftext;
-        if(text3.length > 200) text3 = text3.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text3.length > 200) text3 = text3.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title3").html(title3);
@@ -301,7 +301,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author4 = "Auteur: " + data.data.children[3].data.author;
         var link4 = data.data.children[3].data.url;
         var text4 = data.data.children[3].data.selftext;
-        if(text4.length > 200) text4 = text4.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text4.length > 200) text4 = text4.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title4").html(title4);
@@ -314,7 +314,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author5 = "Auteur: " + data.data.children[4].data.author;
         var link5 = data.data.children[4].data.url;
         var text5 = data.data.children[4].data.selftext;
-        if(text5.length > 200) text5 = text5.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text5.length > 200) text5 = text5.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title5").html(title5);
@@ -327,7 +327,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author6 = "Auteur: " + data.data.children[5].data.author;
         var link6 = data.data.children[5].data.url;
         var text6 = data.data.children[5].data.selftext;
-        if(text6.length > 200) text6 = text6.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text6.length > 200) text6 = text6.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title6").html(title6);
@@ -340,7 +340,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author7 = "Auteur: " + data.data.children[6].data.author;
         var link7 = data.data.children[6].data.url;
         var text7 = data.data.children[6].data.selftext;
-        if(text7.length > 200) text7 = text7.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text7.length > 200) text7 = text7.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title7").html(title7);
@@ -353,7 +353,7 @@ if (mysqli_num_rows($result1) > 0) {
         var author8 = "Auteur: " + data.data.children[7].data.author;
         var link8 = data.data.children[7].data.url;
         var text8 = data.data.children[7].data.selftext;
-        if(text8.length > 200) text8 = text8.substring(0,200) + "...  <b>Lees meer door op de link te klikken.</b>";
+        if(text8.length > 200) text8 = text8.substring(0,200) + "...  <b>Read more.</b>";
 
 
         $("#title8").html(title8);
@@ -364,8 +364,8 @@ if (mysqli_num_rows($result1) > 0) {
     </script>
   </div>
 
-  <script src="/js/app.js"></script>
-  <script src="/js/ui.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/ui.js"></script>
 
 </body>
 </html>

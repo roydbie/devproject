@@ -64,11 +64,11 @@ if (mysqli_num_rows($result1) > 0) {
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
   <!-- materialize icons, css & js -->
-  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link type="text/css" href="../css/materialize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" href="/css/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="/js/materialize.min.js"></script>
-  <link rel="manifest" href="/manifest.json">
+  <link type="text/css" href="../css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <link rel="manifest" href="../manifest.json">
 
   <!-- ios support-->
   <link rel="apple-touch-icon" href="/icons/icon-96x96.png">
@@ -116,7 +116,7 @@ if (mysqli_num_rows($result1) > 0) {
       echo '</a></li>';
     }
     if ($group4name === "notfound") {
-      echo '<li><a href="/pages/newgroup.php?username=' . $username . '" class="waves-effect">
+      echo '<li><a href="newgroup.php?username=' . $username . '" class="waves-effect">
         <i class="material-icons">add</i>Add a group</a>
       </li>';
     } else {
@@ -126,8 +126,11 @@ if (mysqli_num_rows($result1) > 0) {
     }
 
     ?>
-    <li><a href="/pages/instellingen.php?username=<?php echo $username ?>" class="waves-effect">
+    <li><a href="instellingen.php?username=<?php echo $username ?>" class="waves-effect">
       <i class="material-icons">settings</i>Settings</a>
+    </li>
+    <li><a href="login.php" class="waves-effect">
+      <i class="material-icons">exit_to_app</i>Log out</a>
     </li>
   </ul>
 
@@ -159,7 +162,7 @@ if (mysqli_num_rows($result1) > 0) {
       echo "<script>console.log('" . $row["username"] . "' );</script>";
       echo "<script>console.log('" . $row["$grouppoints"] . "' );</script>";
       echo '<div class="card-panel user white row">
-                <img src="/img/blank.png" alt="not found">
+                <img src="../img/blank.png" alt="not found">
                 <div class="user-details">
                   <div class="user-title">';
       echo $row["username"];
@@ -217,7 +220,7 @@ if (mysqli_num_rows($result1) > 0) {
 
   </div>
 
-  <script src="/js/app.js"></script>
-  <script src="/js/ui.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/ui.js"></script>
 </body>
 </html>
